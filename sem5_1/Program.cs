@@ -8,11 +8,10 @@ void FillArray(int [] array)
         array[i] = new Random().Next(-9,10);
 }
 
-void PrintArray(int [] array)
+void FillArray(int [] array)
 {
-    foreach (var el in array)
-        Console.Write($"{el} ");
-    Console.WriteLine();
+    for (int i=0;i<array.Length;i++)
+        array[i] = new Random().Next(-9,10);
 }
 
 void ChangeArray(int[] array)
